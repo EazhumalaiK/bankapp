@@ -1,11 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import TopBarNavigation from "./components/TopBarNavigation";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline p-4 m-30 text-orange-800">
-        Hello world!
-      </h1>
+      <BrowserRouter>
+        <TopBarNavigation />
+      </BrowserRouter>
     </>
   );
 }

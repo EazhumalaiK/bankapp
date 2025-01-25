@@ -1,11 +1,5 @@
-import React from 'react'
-
 const AllTransactions = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default AllTransactions
+export default AllTransactions;
