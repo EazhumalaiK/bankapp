@@ -22,20 +22,20 @@ const Login = () => {
     ConfirmPassword: "",
   });
 
-  const [currentUser, setCurrentUser] = useState({
-    FullName: "string",
-    Email: "string",
-    IsLocalUser: false,
-    Name: "string",
-    Password: "string",
-    LastLogin: "2025-01-26T10:53:13.653Z",
-    Blocked: false,
-    BlockedSince: "2025-01-26T10:53:13.653Z",
-    Active: false,
-    FailedLogins: 0,
-    WebServiceUser: false,
-    IsAnonymous: false,
-  });
+  // const [currentUser, setCurrentUser] = useState({
+  //   FullName: "string",
+  //   Email: "string",
+  //   IsLocalUser: false,
+  //   Name: "string",
+  //   Password: "string",
+  //   LastLogin: "2025-01-26T10:53:13.653Z",
+  //   Blocked: false,
+  //   BlockedSince: "2025-01-26T10:53:13.653Z",
+  //   Active: false,
+  //   FailedLogins: 0,
+  //   WebServiceUser: false,
+  //   IsAnonymous: false,
+  // });
 
   const updateCurrentUserDe = (data: any) => {
     console.log("name", data);
