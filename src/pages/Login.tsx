@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-import { MyContext } from "../context/MyContext";
+import { UserContext } from "../context/AllContext";
 
 const Login = () => {
   const [activeTab, setActiveTab] = useState("Signup");
@@ -9,12 +8,14 @@ const Login = () => {
   const [isSignupDone, setIsSignupDone] = useState(false);
 
   const navigate = useNavigate();
-  const context = useContext(MyContext);
+
+  const context = useContext(UserContext);
+
   if (!context) {
     throw new Error("MyComponent must be used within a MyContext.Provider");
   }
 
-  const { setText } = context;
+  const { setUser } = context;
 
   const [loginForm, setLoginForm] = useState({
     username: "",
@@ -47,9 +48,10 @@ const Login = () => {
 
   const updateCurrentUserDe = (data: any) => {
     console.log("name", data);
-    navigate("/");
+    navigate("/home");
     const { FullName } = data;
-    setText(FullName);
+    console.log(FullName);
+    setUser(data);
   };
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {

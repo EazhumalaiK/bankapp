@@ -11,8 +11,8 @@ const TopBarNavigation = () => {
       <Routes>
         <Route path="/" element={<Login />}></Route>
         <Route path="/AllTransactions" element={<AllTransactions />}></Route>
-        <Route path="/MyProfile" element={<MyProfile />}></Route>
-        <Route path="/MyTransactions" element={<MyTransactions />}></Route>
+        <Route path="/myprofile" element={<MyProfile />}></Route>
+        <Route path="/mytransactions" element={<MyTransactions />}></Route>
         <Route path="/home" element={<Home />}></Route>
       </Routes>
     </div>
